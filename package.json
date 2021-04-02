@@ -4,13 +4,22 @@
   "main": "src/main.js",
   "author": "Vijay Rangan <vijay.rangan@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "migrate:init": "knex init",
+    "migrate:make": "knex migrate:make",
+    "migrate:up": "knex migrate:latest",
+    "migrate:down": "knex migrate:down",
+    "migrate:rollback": "knex migrate:rollback",
+    "migrate:rollback:all": "knex migrate:rollback --all"
+  },
   "devDependencies": {
+    "@types/knex": "^0.16.1",
+    "@types/node": "^14.14.37",
     "chai": "^4.3.4",
     "mocha": "^8.3.2",
     "sinon": "^10.0.0"
   },
   "dependencies": {
-    "bookshelf": "^1.2.0",
     "dotenv": "^8.2.0",
     "knex": "^0.95.4",
     "pg": "^8.5.1"
