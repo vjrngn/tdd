@@ -10,15 +10,19 @@
     "migrate:up": "knex migrate:latest",
     "migrate:down": "knex migrate:down",
     "migrate:rollback": "knex migrate:rollback",
-    "migrate:rollback:all": "knex migrate:rollback --all"
+    "migrate:rollback:all": "knex migrate:rollback --all",
+    "test": "mocha"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.16",
     "@types/knex": "^0.16.1",
+    "@types/mocha": "^8.2.2",
     "@types/node": "^14.14.37",
     "chai": "^4.3.4",
     "faker": "^5.5.2",
     "mocha": "^8.3.2",
-    "sinon": "^10.0.0"
+    "sinon": "^10.0.0",
+    "testcontainers": "^7.7.0"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
