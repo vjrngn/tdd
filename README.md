@@ -1,4 +1,4 @@
-# Testing (TDD, Unit, Integration)
+# Testing strategies (TDD, Unit, Integration and End to End)
 My take on the different types of tests and my approach to Test Driven Development (TDD)
 
 ![Testing pyramid](https://user-images.githubusercontent.com/4737780/113559528-2db63300-961f-11eb-831b-3fce4ab984c7.png)
