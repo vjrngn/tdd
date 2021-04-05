@@ -3,6 +3,7 @@ exports.up = function (knex) {
     table.increments("id");
     table.string("name").notNullable();
     table.string("email").notNullable().unique();
+    table.timestamps(true, true);
   });
 };
 

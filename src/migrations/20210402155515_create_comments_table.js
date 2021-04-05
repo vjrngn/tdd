@@ -4,7 +4,7 @@ exports.up = function (knex) {
     table.string("title").notNullable();
     table.integer("author").unsigned().notNullable();
     table.integer("post_id").unsigned().notNullable();
-    table.timestamps();
+    table.timestamps(true, true);
 
     table
       .foreign("author")
@@ -18,8 +18,10 @@ exports.up = function (knex) {
 };
 
 exports.down = function (knex) {
-  return knex.schema
-    .dropForeign("author_foreign")
-    .dropForeign("post_id_foreign")
-    .dropTable("comments");
+  return knex.schema.dropTable("comments", (table) => {
+    table
+      .dropForeign("author_foreign")
+      .dropForeign("post_id_foreign")
+      .dropTable("comments");
+  });
 };

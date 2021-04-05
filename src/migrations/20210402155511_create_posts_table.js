@@ -4,7 +4,7 @@ exports.up = function (knex) {
     table.string("title").notNullable();
     table.string("body");
     table.integer("author").unsigned().notNullable();
-    table.timestamps();
+    table.timestamps(true, true);
 
     table
       .foreign("author")
@@ -14,5 +14,7 @@ exports.up = function (knex) {
 };
 
 exports.down = function (knex) {
-  return knex.schema.dropForeign("author_foreign").dropTable("continents");
+  return knex.schema.dropTable("posts", (table) => {
+    table.dropForeign("author_foreign").dropTable("continents");
+  });
 };
