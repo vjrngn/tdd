@@ -3,7 +3,7 @@ const {
   DB_PORT = 5432,
   DB_USER = "postgres",
   DB_PASSWORD = "postgres",
-  DB_NAME = "app",
+  DB_NAME = "tdd",
 } = process.env;
 
 module.exports = require("knex")({
