@@ -1,3 +1,5 @@
+![testing pyramid](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Da2dkQUHqP1o&psig=AOvVaw0sMxYnv4nbr_zOmoX5L9ss&ust=1617699495330000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCbkLPe5u8CFQAAAAAdAAAAABAi)
+
 #### Testing (TDD, Unit, Integration)
 My take on the different types of tests and my approach to Test Driven Development (TDD)
 
