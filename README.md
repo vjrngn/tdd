@@ -1,7 +1,7 @@
-![Testing pyramid](https://user-images.githubusercontent.com/4737780/113559528-2db63300-961f-11eb-831b-3fce4ab984c7.png)
-
-#### Testing (TDD, Unit, Integration)
+# Testing (TDD, Unit, Integration)
 My take on the different types of tests and my approach to Test Driven Development (TDD)
+
+![Testing pyramid](https://user-images.githubusercontent.com/4737780/113559528-2db63300-961f-11eb-831b-3fce4ab984c7.png)
 
 ###### Unit tests
 The essence of a unit test is to test the behaviour of a single unit
