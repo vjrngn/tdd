@@ -8,6 +8,7 @@ const {
 
 module.exports = require("knex")({
   client: "pg",
+  debug: true,
   connection: {
     host: DB_HOST,
     port: DB_PORT,

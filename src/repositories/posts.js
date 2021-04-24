@@ -17,4 +17,12 @@ module.exports = {
   getAllPosts({ limit = 50 } = {}) {
     return database.select("*").from("posts").limit(limit);
   },
+
+  update({ id, data }) {
+    return database.where("id", id).update(data).returning("*");
+  },
+
+  deletePost(id) {
+    return database.from("posts").where("id", id).del();
+  },
 };
