@@ -1,0 +1,6 @@
+color: true
+diff: true
+exit: true
+spec:
+  - 'tests/**/*.test.js'
+recursive: true

@@ -20,9 +20,10 @@ router.get("/", async function index(req, res) {
 });
 
 router.post("/", async function create(req, res) {
+  // validation
   const post = await postService.create({
     userId: 1,
-    data: req.body,
+    ...req.body,
   });
 
   if (!post) {

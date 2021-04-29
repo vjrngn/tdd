@@ -16,8 +16,8 @@ module.exports = {
     return database.select("*").from("posts").limit(limit);
   },
 
-  update({ id, data }) {
-    return database.where("id", id).update(data).returning("*");
+  update(id, data) {
+    return database.table("posts").where("id", id).update(data).returning("*");
   },
 
   deletePost(id) {

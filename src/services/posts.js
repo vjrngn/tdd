@@ -12,6 +12,7 @@ module.exports = {
   },
 
   async create(data) {
+    console.log(data);
     try {
       const post = await postsRepo.createPost({
         userId: data.userId,
@@ -36,7 +37,7 @@ module.exports = {
 
   async updatePost(id, data) {
     try {
-      return await postsRepo.update({ id, data });
+      return await postsRepo.update(id, data);
     } catch (e) {
       console.error(`error updating post with id ${id}`, e);
       return;
